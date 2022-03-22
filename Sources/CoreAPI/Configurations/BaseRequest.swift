@@ -1,7 +1,7 @@
 import Foundation
 
 class BaseRequest: Codable, Requestable {
-
+    
     var headerName: String = ""
 
     private enum CodingKeys: String, CodingKey {

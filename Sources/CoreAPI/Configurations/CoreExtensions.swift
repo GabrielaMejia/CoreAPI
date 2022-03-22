@@ -2,6 +2,6 @@ import Foundation
 
 extension Date {
     func toString() -> String {
-        return DeviceLogger.dateFormatter.string(from: self as Date)
+        return CoreLogger.dateFormatter.string(from: self as Date)
     }
 }
