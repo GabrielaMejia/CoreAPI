@@ -22,6 +22,7 @@ public struct CoreAPI {
     
     public func hasConnection()->Bool{
         var connection = false
+        connectivity.framework = .network
         connectivity.checkConnectivity { connectivity in
             let status = connectivity.status
             if status == .connected || status == .determining || status == .connectedViaWiFi || status == .connectedViaCellular || status == .connectedViaEthernet{
@@ -29,6 +30,11 @@ public struct CoreAPI {
             }
         }
         return connection
+    }
+    
+    public func hasConnectionLocal()->Bool{
+        connectivity.framework = .network
+        return connectivity.isConnected
     }
     
     public func executeExampleService(exampleVar1: String, exampleVar2: String) -> Single <DefaultResponseModel>{
