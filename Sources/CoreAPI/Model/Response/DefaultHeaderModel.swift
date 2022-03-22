@@ -2,8 +2,8 @@ import Foundation
 
 public struct DefaultHeaderModel: Decodable{
     
-    let errorMessage: String?
-    let errorCode: String?
+    public let errorMessage: String?
+    public let errorCode: String?
     
     enum CodingKeys: String, CodingKey {
         case errorMessage = "errorMessage"
