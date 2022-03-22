@@ -1,8 +1,6 @@
 # CoreAPI
 This is a project created with the intention of serving as a "base" for the creation of future packages that will help to create a simpler way to maintain Swift applications. 
 
-## THIS IS A PROJECT UNDER CONSTRUCTION
-
 ## Features
 - Example to create requests
 - Handle status connection
@@ -16,3 +14,5 @@ This is a project created with the intention of serving as a "base" for the crea
 ## License
 
 MIT
+
+## THIS IS A PROJECT UNDER CONSTRUCTION
