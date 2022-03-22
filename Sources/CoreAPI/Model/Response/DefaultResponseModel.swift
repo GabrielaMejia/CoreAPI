@@ -1,6 +1,6 @@
 import Foundation
 
-struct DefaultResponseModel: Decodable{
+public struct DefaultResponseModel: Decodable{
     
     let response: DefaultHeaderModel?
     

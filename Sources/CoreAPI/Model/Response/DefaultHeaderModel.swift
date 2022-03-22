@@ -1,6 +1,6 @@
 import Foundation
 
-struct DefaultHeaderModel: Decodable{
+public struct DefaultHeaderModel: Decodable{
     
     let errorMessage: String?
     let errorCode: String?
