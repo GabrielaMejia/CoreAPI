@@ -24,7 +24,7 @@ public struct CoreAPI {
         var connection = false
         connectivity.checkConnectivity { connectivity in
             let status = connectivity.status
-            if status == .connected || status == .connectedViaWiFi || status == .connectedViaCellular || status == .connectedViaEthernet{
+            if status == .connected || status == .determining || status == .connectedViaWiFi || status == .connectedViaCellular || status == .connectedViaEthernet{
                 connection = true
             }
         }
