@@ -1,6 +1,6 @@
 import Foundation
 
-class BaseRequest: Codable, Requestable {
+class BaseRequest: Codable {
     
     var headerName: String = ""
 

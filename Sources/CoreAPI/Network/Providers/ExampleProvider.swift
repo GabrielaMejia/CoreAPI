@@ -15,10 +15,7 @@ enum ExampleProvider {
 // MARK: - TargetType
 
 extension ExampleProvider: BaseProvider {
-    
-    var request: Requestable {
-        return BaseRequest()
-    }
+
     
     var path: String {
         return "path_service"

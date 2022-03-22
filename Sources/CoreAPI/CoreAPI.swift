@@ -3,6 +3,7 @@ import RxSwift
 
 public struct CoreAPI {
     
+    let text = "Hello, World!"
     let connectivity: Connectivity = Connectivity()
     let exampleService = ExampleService.current
     
@@ -11,6 +12,9 @@ public struct CoreAPI {
         return constants
     }()
    
+    init(){
+        
+    }
     public init(environment: Environment, timeoutAllowed: Int = 60){
         Constants.current.environment = environment
         Constants.current.timeoutWindow = timeoutAllowed

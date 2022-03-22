@@ -7,9 +7,9 @@ protocol Requestable {
 }
 
 protocol BaseProvider: TargetType, AccessTokenAuthorizable {
-    var request: Requestable {get}
+
 }
 
 protocol BaseProviderAuthorization: TargetType, AccessTokenAuthorizable {
-    var request: Requestable {get}
+
 }
