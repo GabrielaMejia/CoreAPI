@@ -19,7 +19,6 @@ let package = Package(
     targets: [
         .target(name: "CoreAPI", dependencies: [
             .product(name: "RxMoya", package: "Moya"),
-            .product(name: "Reachability", package: "Reachability.swift")]),
-        .testTarget(name: "CoreAPITests", dependencies: ["CoreAPI"]),
+            .product(name: "Reachability", package: "Reachability.swift")])
     ]
 )
