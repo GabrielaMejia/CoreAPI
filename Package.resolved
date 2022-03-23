@@ -10,21 +10,21 @@
       }
     },
     {
-      "identity" : "connectivity",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/rwbutler/connectivity",
-      "state" : {
-        "revision" : "8b5d46aa82ff1a2eda220523437946aa5aa2bf29",
-        "version" : "5.1.0"
-      }
-    },
-    {
       "identity" : "moya",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Moya/Moya.git",
       "state" : {
         "revision" : "9b906860e3c3c09032879465c471e6375829593f",
         "version" : "15.0.0"
+      }
+    },
+    {
+      "identity" : "reachability.swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ashleymills/Reachability.swift",
+      "state" : {
+        "revision" : "c01bbdf2d633cf049ae1ed1a68a2020a8bda32e2",
+        "version" : "5.1.0"
       }
     },
     {

@@ -1,11 +1,10 @@
-import Connectivity
 import RxSwift
 
 public struct CoreAPI {
     
     let text = "Hello, World!"
-    let connectivity: Connectivity = Connectivity()
-    let exampleService = ExampleService.current
+    private let connection = ReachabilityHandler.current
+    private let exampleService = ExampleService.current
     
     public static let current: CoreAPI = {
         let constants = CoreAPI(environment: Constants.current.environment, timeoutAllowed: Constants.current.timeoutWindow)
@@ -21,20 +20,7 @@ public struct CoreAPI {
     }
     
     public func hasConnection()->Bool{
-        var connection = false
-        connectivity.framework = .network
-        connectivity.checkConnectivity { connectivity in
-            let status = connectivity.status
-            if status == .connected || status == .determining || status == .connectedViaWiFi || status == .connectedViaCellular || status == .connectedViaEthernet{
-                connection = true
-            }
-        }
-        return connection
-    }
-    
-    public func hasConnectionLocal()->Bool{
-        connectivity.framework = .network
-        return connectivity.isConnected
+        return connection.hasConnection()
     }
     
     public func executeExampleService(exampleVar1: String, exampleVar2: String) -> Single <DefaultResponseModel>{

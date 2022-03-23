@@ -14,12 +14,12 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/Moya/Moya.git", .upToNextMajor(from: "15.0.0")),
-        .package(url: "https://github.com/rwbutler/connectivity", .upToNextMajor(from: "5.0.0"))
+        .package(url: "https://github.com/ashleymills/Reachability.swift", .upToNextMajor(from: "5.1.0"))
     ],
     targets: [
         .target(name: "CoreAPI", dependencies: [
             .product(name: "RxMoya", package: "Moya"),
-            .product(name: "Connectivity", package: "Connectivity")]),
+            .product(name: "Reachability", package: "Reachability.swift")]),
         .testTarget(name: "CoreAPITests", dependencies: ["CoreAPI"]),
     ]
 )
